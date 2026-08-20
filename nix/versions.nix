@@ -30,18 +30,18 @@
   # One hash per unique git source. Regenerate after Cargo.lock changes:
   # set to a fake hash and let `nix build` report the correct one.
   sidecarCargoOutputHashes = {
-    "aws-creds-0.39.1" = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
-    "mesh-llm-api-client-0.75.1" = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
+    "aws-creds-0.39.1" = "sha256-QAAm1phmeLFtDRgfDCoHijN1ce/rYzh18KziOUbL+hw=";
+    "mesh-llm-api-client-0.75.1" = "sha256-RXjmM66u40cxnacbvTtCFJShMK4BM+MHOyJ2vQ7Gw60=";
   };
 
   # Cargo.lock output hashes for the desktop Tauri build (desktop/src-tauri/Cargo.lock).
-  # Same package may have a different hash vs. sidecars due to different dep trees.
+  # Same mesh-llm git source/rev as the sidecars, so same hash here.
   desktopCargoOutputHashes = {
-    "mesh-llm-api-client-0.75.1" = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
+    "mesh-llm-api-client-0.75.1" = "sha256-RXjmM66u40cxnacbvTtCFJShMK4BM+MHOyJ2vQ7Gw60=";
   };
 
   # Hash for pnpm dependencies (desktop frontend).
   # Regenerate after package.json / pnpm-lock.yaml changes: set to a fake hash
   # and let `nix build` report the correct one.
-  pnpmHash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
+  pnpmHash = "sha256-+YUfxmJOyPE5dB4vVVuArBcEliTb+sZSJoFjuPwUvx0=";
 }
